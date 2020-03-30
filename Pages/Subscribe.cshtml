@@ -1,0 +1,22 @@
+﻿@page
+@model project.Pages.SubscribeModel
+@{
+    ViewData["Title"] = "Subscribe";
+}
+
+<h1>Subscribe</h1>
+<br />
+<br />
+<h2>You are the one of the madaf@kkin subscribers! BAMMMM!</h2>
+<a href="Index">Back to Home Page</a>
+<br />
+<br />
+<h3>Very cool subscribers:</h3>
+<ul>
+    @foreach (var mail in SubscribeModel.subscribers)
+     {
+        <li>@mail</li>
+     }
+</ul>
+<br />
+
